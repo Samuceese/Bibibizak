@@ -1,5 +1,5 @@
 /**
- * @author José Manuel Pérez 
+ * @author Samuel Cortes Sanchez
  */
 
 import javax.swing.JOptionPane;
@@ -7,11 +7,11 @@ import javax.swing.JOptionPane;
 public class TecladoGrafico {
 	
 	/**
-	 * Esté método muestra una ventana gráfica con el texto recibido como
-	 * parámetro y pide un número entero por teclado. 
-	 * @param texto  - Este texto será mostrado en la ventana gráfica
-	 * @return    Devolverá el número entero leído de teclado
-	 * @throws No lanza ninguna excepción
+	 * Estï¿½ mï¿½todo muestra una ventana grï¿½fica con el texto recibido como
+	 * parï¿½metro y pide un nï¿½mero entero por teclado. 
+	 * @param texto  - Este texto serï¿½ mostrado en la ventana grï¿½fica
+	 * @return    Devolverï¿½ el nï¿½mero entero leï¿½do de teclado
+	 * @throws No lanza ninguna excepciï¿½n
 	 */
 	public int leerInt(String texto){
 		int num=0;
@@ -41,7 +41,7 @@ public class TecladoGrafico {
 				   JOptionPane.PLAIN_MESSAGE,
 				   null,    // null para icono por defecto.
 				   botones,   // null para YES, NO y CANCEL
-				   botones[0]);  //opción por defecto
+				   botones[0]);  //opciï¿½n por defecto
 				 
 		return opc;
 	}
@@ -66,21 +66,21 @@ public class TecladoGrafico {
 	}
 	public static void main (String a[]){
 		TecladoGrafico t= new TecladoGrafico();
-		int n= t.leerInt("Dar número");
-		System.out.println("Número leído:"+ n);
-		double d= t.leerDouble("Dar número real");
-		System.out.println("Número leído:"+ d);
+		int n= t.leerInt("Dar nï¿½mero");
+		System.out.println("Nï¿½mero leï¿½do:"+ n);
+		double d= t.leerDouble("Dar nï¿½mero real");
+		System.out.println("Nï¿½mero leï¿½do:"+ d);
 		String s= t.leerString("Dar String");
-		System.out.println("String leído:"+ s);
+		System.out.println("String leï¿½do:"+ s);
 		t.mostrarMsg("Se acabo \n fin");
 		
 		String msgs[]={"cero","uno", "dos", "tres"};
 		n=t.botonSeleccion(msgs);
-		System.out.println("Opción elegida:"+n);
+		System.out.println("Opciï¿½n elegida:"+n);
 		
 		String msgs2[]={"opc00","opc01", "opc02"};
 		n=t.menuSeleccion(msgs2);
-		System.out.println("Opción elegida:"+n);
+		System.out.println("Opciï¿½n elegida:"+n);
 		
 	}
 
