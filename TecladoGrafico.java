@@ -1,6 +1,7 @@
 /**
  * @author Samuel Cortes Sanchez
  */
+//proyecto de github
 
 import javax.swing.JOptionPane;
 
